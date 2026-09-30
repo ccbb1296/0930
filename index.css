@@ -1,0 +1,93 @@
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; width: 100%; min-height: 100vh; }
+
+body { font-family: Arial, sans-serif; display: flex; flex-direction: column; }
+
+/* 상단 메뉴 */
+header {
+    height: 45px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+}
+header h1 { margin: 0; font-size: 22px; }
+nav a { color: white; margin-left: 25px; }
+
+/* 페이지 제목 */
+.page-title { height: 110px; background-color: #ddd; padding: 20px; }
+.page-title h2 { margin: 0 0 10px; }
+.page-title p { margin: 0; }
+
+/* 홈 환영 영역 */
+.welcome {
+    width: 100%;
+    text-align: center;
+    padding: 150px 0;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("./img/8549.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.welcome h2 { margin: 0 0 20px; }
+
+/* 본문 */
+main { padding: 20px 18px; flex: 1; }
+
+/* 섹션 제목 */
+.section-title {
+    background-color: #eee;
+    border-left: 5px solid #333;
+    padding: 5px 10px;
+    margin: 20px 0 15px;
+}
+
+/* 메뉴 카드 */
+.menu-list { display: flex; gap: 28px; margin-bottom: 25px; }
+.menu-card { flex: 1; border: 1px solid #aaa; background-color: white; }
+
+.image {
+    height: 220px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.image img { width: 100%; height: 100%; object-fit: contain; }
+
+.menu-card h3, .menu-card p { margin: 8px; }
+.menu-card strong { display: block; margin: 8px; color: rgb(29, 25, 25); }
+
+/* 소개 영역 */
+.intro { display: flex; gap: 80px; margin-bottom: 20px; }
+
+.store-image {
+    width: 40%;
+    height: 200px;
+    background-color: #bbb;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.store-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* 테이블 */
+table { border-collapse: collapse; }
+th, td { border: 1px solid #aaa; padding: 6px 20px; text-align: center; }
+th { background-color: #eee; }
+.history { width: 100%; margin-bottom: 20px; }
+
+/* 하단 */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    font-size: 12px;
+    margin-top: auto;
+}
